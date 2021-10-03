@@ -1,21 +1,29 @@
 # Teste Técnico LinkApi
 
-Neste projeto foi realizado a integração entre duas plataformas, Pipedrive e Bling, foi pedido para consultar as oportunidades igual a ganho no Pipedrive e inseri las como pedidos no Bling.
+Neste projeto foi realizada a integração entre duas plataformas, Pipedrive e Bling, foi pedido para consultar as oportunidades igual a ganho no Pipedrive e inseri-las como pedidos no Bling, consolidar no banco de dados e retornar os dados salvos no Banco.
 
-## Getting Started
+## Candidato
 
-Projeto pronto para Rodar, necessario apenas o SDK do flutter instalado
+   Roberto Chaves Souza
 
-### Prerequisites
+## Banco de dados utilizado
 
-Para Rodar o projeto é necessario ter o SDK flutter Instalador
+Banco de dados adotado nesse projeto foi o Mongodb,foi utilizado o Mongodb Atlas.
 
-### Installing
+### Informações Técnicas
 
- O projeto esta rodando nas segintes especificações:
- 
-Flutter 1.12.13+hotfix.5 • channel stable • https://github.com/flutter/flutter.git
-Framework • revision 27321ebbad (7 months ago) • 2019-12-10 18:15:01 -0800
-Engine • revision 2994f7e1e6
-Tools • Dart 2.7.0
+node v14.17.0
+npm  6.14.13
+
+Também foi utilizado o nodemon,e o sucrase no ambiente de desenvolvimento
+
+
+### Rotas
+
+<ul>
+ <li>aa</li>
+ <li>bb</li>
+ <ul/>
+
+
 
