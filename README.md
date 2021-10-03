@@ -22,7 +22,7 @@ Também foi utilizado o nodemon,e o sucrase no ambiente de desenvolvimento
 
 <ul>
  <li>GET  /   Sinaliza o funcionamento da API.</li>
- <li>POST /integration  IntegrationController.store   Responsável por integrar a api do Pipedrive juntamente com a api do Bling,e consolidar no Banco de dados as integrações feitas.</li>
+ <li>Tipo: POST  Rota: /integration Controller: IntegrationController.store Descrição Responsável por integrar a api do Pipedrive juntamente com a api do Bling,e consolidar no Banco de dados as integrações feitas.</li>
  <ul/>
 
 
