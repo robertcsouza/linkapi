@@ -8,23 +8,28 @@ Neste projeto foi realizada a integração entre duas plataformas, Pipedrive e B
 
 ## Banco de dados utilizado
 
-Banco de dados adotado nesse projeto foi o Mongodb,foi utilizado o Mongodb Atlas.
+O  Mongodb foi o banco de dados adotado nesse projeto,foi utilizado o Mongodb Atlas.
 
 ### Informações Técnicas
 
-node v14.17.0
+node v14.17.0 <br/>
 npm  6.14.13
 
 Também foi utilizado o nodemon,e o sucrase no ambiente de desenvolvimento
 
 
-### Rotas
+## Rotas API
 
-<ul>
- <li>GET</li>
- <li> / </li>
- <li>Sinaliza o funcionamento da API.</li>   
- <ul/>
+
+   
+|  Tipo               |        Rota         |  Controller               |       Descrição         |
+| ------------------- | ------------------- | ------------------- | ------------------- |
+|  GET |  / |   |  Sinaliza o funcionamento da API. |
+| POST |  /integration |  IntegrationController.store |  Responsável por integrar a api do Pipedrive juntamente com a api do Bling,e consolidar no Banco de dados as integrações feitas. |  
+|  GET |  /integration/filter?data=00/00/0000&value=000 |  IntegrationController.index |  retornar as integrações salvas no Banco de dados filtradas por data e ou valor |
+|  GET |  /integration |  IntegrationController.show |  retorna todas as integrações salvas no Banco de dados.|  
+|  GET |  /pipedrive/won/list |  PipeController.index |  busca  direto da API do Pipedrive as oportunidades iguais a (ganho). |
+|  GET |  /bling/list |  BlingController.index | Busca direto da API do Bling os pedidos. |  
 
 
 
