@@ -18,6 +18,7 @@ routes.get('/', (req, res)=>{
 
 
 routes.post('/integration', IntegrationController.store);
+
 //routes.post('/mongo', IntegrationController.mongo);
 
 //routes.post('/agendamentos', IntegrationController.indexById);

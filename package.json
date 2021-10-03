@@ -24,10 +24,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robertcsouza/ApiAgenda.git"
+    "url": "git+https://github.com/robertcsouza/linkapi.git"
   },
   "bugs": {
-    "url": "https://github.com/robertcsouza/ApiAgenda/issues"
+    "url": "https://github.com/robertcsouza/link/issues"
   },
-  "homepage": "https://github.com/robertcsouza/ApiAgenda#readme"
+  "homepage": "https://github.com/robertcsouza/linkapi#readme"
 }
