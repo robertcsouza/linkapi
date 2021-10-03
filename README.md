@@ -21,8 +21,8 @@ Também foi utilizado o nodemon,e o sucrase no ambiente de desenvolvimento
 ### Rotas
 
 <ul>
- <li>aa</li>
- <li>bb</li>
+ <li>GET  /   Sinaliza o funcionamento da API.</li>
+ <li>POST /integration  IntegrationController.store   Responsável por integrar a api do Pipedrive juntamente com a api do Bling,e consolidar no Banco de dados as integrações feitas.</li>
  <ul/>
 
 
