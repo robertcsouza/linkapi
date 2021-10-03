@@ -9,7 +9,7 @@ class App{
         //mudar para o padrao ecs6
         this.app = require('http').createServer(this.server)
     
-        mongoose.connect('mongodb+srv://devhosue:linkapi@cluster0.2auu3.mongodb.net/linkapi?retryWrites=true&w=majority',{
+        mongoose.connect(process.env.MONGO_URL,{
             useNewUrlParser:true,
             useUnifiedTopology:true
         });

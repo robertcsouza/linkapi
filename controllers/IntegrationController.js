@@ -1,4 +1,4 @@
-import app from '../src/app';
+
 import integration from '../models/Integration';
 import axios from 'axios';
 import createXml from '../helpers/createXml';
