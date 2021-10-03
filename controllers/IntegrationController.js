@@ -6,8 +6,35 @@ import DateTime from '../helpers/DateTime';
 
 class IntegrationController {
 
-   // data tipo horario user_id
+   
+  //lista todas as itegracoes do banco
 
+   async show(req,res){
+    
+    const result = await integration.find();
+
+    return res.json(result);
+
+
+   }
+
+    
+   async index(req,res){
+    
+    const {data,value} = req.query;
+    const filter = {data,value};
+    
+    if(data === undefined) delete filter.data
+    if(value === undefined) delete filter.value
+
+    const result = await integration.find(filter);
+
+    return res.json(result);
+
+
+   }
+
+   
 
     async store(req,res){
        
@@ -25,7 +52,6 @@ class IntegrationController {
         };
 
 
-     // pipe.get(`/api/v1/deals:(id,title,value,currency,status)/?status=won&api_token=${process.env.PIPE_TOKEN}`)
       pipe.get(`/api/v1/deals:(id,title,value,currency,status,user_id)/?status=won&api_token=${process.env.PIPE_TOKEN}`)
       .then((response) =>{
         
@@ -34,7 +60,7 @@ class IntegrationController {
         
         const data = response.data['data'];
         
-        if(data == null ){ 
+        if(data == undefined ){ 
             return res.json({'ok':'nao foi possivel retornar os valores'});
         }    
 
@@ -100,12 +126,13 @@ class IntegrationController {
        
       })
       .catch((err) => {
-        return res.json({"error":err});
+        return res.json({"error":'não foi possivel executar esta ação'});
      });
      
         
         
     }
+
 }
 
 export default new  IntegrationController();
