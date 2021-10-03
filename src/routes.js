@@ -1,11 +1,8 @@
 import { Router } from 'express';
 
-import authMiddleware from '../middlewares/auth';
+import IntegrationController from '../controllers/IntegrationController';
 
-import CadastroController from '../controllers/CadastroController';
-import AgendamentoController from '../controllers/AgendamentoController';
-import DisponivelController from '../controllers/DisponivelController';
-import SessionController from '../controllers/SessionController';
+
 
 const routes = new Router();
 
@@ -16,20 +13,19 @@ routes.get('/', (req, res)=>{
     return res.json({ ok:true});
 });
 
-routes.post('/cadastro', CadastroController.store);
-
-routes.post('/login', SessionController.store );
 
 
-routes.use(authMiddleware);
 
-routes.post('/agendar', AgendamentoController.store);
 
-routes.get('/agendamentos/:user_id', AgendamentoController.indexById);
+routes.post('/integration', IntegrationController.store);
+//routes.post('/mongo', IntegrationController.mongo);
 
-routes.get('/agendamentos',AgendamentoController.index);
+//routes.post('/agendamentos', IntegrationController.indexById);
 
-routes.post('/disponivel', DisponivelController.index );
+//routes.delete('/agendamentos', IntegrationController.destroy);
+
+//routes.get('/agendamentos',IntegrationController.index);
+
 
 
 

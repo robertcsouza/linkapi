@@ -1,7 +1,7 @@
 {
-  "name": "apiagendamento",
+  "name": "linkapi",
   "version": "1.0.0",
-  "description": "",
+  "description": "\"# LinkApi\"",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/server.js"
@@ -13,9 +13,21 @@
     "sucrase": "^3.13.0"
   },
   "dependencies": {
+    "axios": "^0.22.0",
     "bcrypt": "^4.0.1",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.7"
-  }
+    "mongoose": "^5.9.7",
+    "multer": "^1.4.2",
+    "socket.io": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertcsouza/ApiAgenda.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robertcsouza/ApiAgenda/issues"
+  },
+  "homepage": "https://github.com/robertcsouza/ApiAgenda#readme"
 }
