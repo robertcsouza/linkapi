@@ -32,4 +32,12 @@ Também foi utilizado o nodemon,e o sucrase no ambiente de desenvolvimento
 |  GET |  /bling/list |  BlingController.index | Busca direto da API do Bling os pedidos. |  
 
 
+## Iniciando o projeto
+
+o projeto está rodando na porta 3333 <br/>
+
+para iniciar o projeto basta utilizar o comando: <br/>
+
+### Yarn dev
+
 
